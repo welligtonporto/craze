@@ -1,0 +1,34 @@
+/*
+ * Displays
+ */
+
+/* General */
+
+// .block-xs, .block-s, ...
+@include repeatInAllBreakpoints(block){
+	display: block !important;
+}
+
+// .inline-block-xs, .inline-block-s, ...
+@include repeatInAllBreakpoints(inline-block){
+	display: inline-block !important;
+}
+
+/* Floats */
+
+// .float-xs-left, .float-s-left, ...
+@include repeatInAllBreakpoints(float, left){
+	float: left;
+}
+
+
+// .float-xs-right, .float-s-right, ...
+@include repeatInAllBreakpoints(float, right){
+	float: right;
+}
+
+
+// .float-xs-none, .float-s-none, ...
+@include repeatInAllBreakpoints(float, none){
+	float: none;
+}

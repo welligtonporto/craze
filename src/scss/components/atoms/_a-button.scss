@@ -1,0 +1,17 @@
+/*
+ * Button
+ */
+
+.a-button {
+	display: inline-block;
+	padding: $space-2 $space-3;
+	text-decoration: none;
+	font-weight: $font-weight-bold;
+	background-color: darken($color-primary, 15%);
+	color: $color-text-negative;
+	@include transition(background-color $time-animation);
+
+	&:hover {
+		background-color: darken($color-primary, 25%);
+	}
+}

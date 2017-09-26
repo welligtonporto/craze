@@ -1,0 +1,91 @@
+/*
+ * Plan
+ */
+
+.o-plans {
+	@include breakpoint(l){
+		margin-bottom: -$space-5;
+		padding: 0 $space-2;
+	}
+
+	&__item {
+		margin: 0 0 $space-4 0;
+
+		@include breakpoint(l){
+			padding: 0 !important;
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:nth-last-child(2) {
+			@include breakpoint(s){
+				margin-bottom: 0;
+			}
+		}
+
+		&-box {
+			max-width: 320px;
+			margin: 0 auto;
+			background-color: $color-bg-primary;
+			border: 2px solid $color-bg-primary-secondary;
+
+			.o-plans__item:nth-child(1) &, .o-plans__item:nth-child(2) &, .o-plans__item:nth-child(4) & {
+				@include breakpoint(l){
+					position: absolute;
+					width: 100%;
+					top: 50%;
+					@include transform(translateY(-50%));
+				}
+			}
+		}
+
+
+		&-name {
+			padding: $space-3 0;
+			@include font-size($font-size-default-4);
+			background-color: $color-primary;
+			color: $color-text-negative;
+		}
+
+		&-price {
+			display: block;
+			position: relative;
+			@include font-size($font-size-default-6);
+			padding: $space-2 0;
+
+			small {
+				position: absolute;
+				top: $space-2;
+				margin: 0 0 0 $space-1;
+				@include font-size($font-size-default-3);
+			}
+		}
+
+		&-features {
+			li {
+				position: relative;
+				padding: $space-2 0;
+				color: $color-text-secondary;
+
+				&:before {
+					content: "";
+					display: block;
+					position: absolute;
+					left: $gutter * 2;
+					top: 0;
+					width: calc(100% - #{$gutter * 4});
+					height: 1px;
+					background-color: $color-border;
+				}
+			}
+		}
+
+		&-footer {
+			padding: $space-3 0;
+			background-color: $color-primary;
+		}
+	}
+}

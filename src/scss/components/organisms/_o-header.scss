@@ -1,0 +1,51 @@
+/*
+ * Header
+ */
+
+.o-header {
+	background: url(../imgs/bg_features.jpg) repeat center fixed;
+	padding: $space-4 0 0 0;
+	color: $color-text-negative;
+    text-align: center;
+
+    %text-shadow {
+    	@include text-shadow(3px 3px 0px rgba($color-text-primary, .3));
+    }
+
+    @include breakpoint(m){
+    	padding-top: $space-5;
+    	text-align: left;
+    }
+
+    &__title {
+		margin: 0 0 $space-3 0;
+		@include font-size($font-size-default-7);
+		font-family: $font-family-brand;
+		@extend %text-shadow;
+
+		@include breakpoint(m){
+    		margin-top: $space-4;
+		}
+
+		@include breakpoint(l){
+    		margin-top: $space-5;
+		}
+    }
+
+    &__description {
+		@include font-size($font-size-default-3);
+		color: $color-text-negative;
+		@extend %text-shadow;
+    }
+
+    &__image {
+    	display: block;
+    	max-width: 100%;
+		margin: 0 auto;
+		@include transform(translateX(16%));
+
+		@include breakpoint(m){
+			@include transform(translateX(0));
+	    }
+    }
+}

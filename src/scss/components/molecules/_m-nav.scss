@@ -1,0 +1,29 @@
+/*
+ * Nav
+ */
+
+.m-nav {
+	display: inline-block;
+
+	li {
+		margin: 0 0 $space-3 0;
+
+		@include breakpoint(m) {
+			margin: 0 $space-4 0 0;
+			float: left;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+
+		a {
+			color: $color-text-secondary;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,348 @@
+/*
+ * Spaces
+ *
+ * Propertys:
+ * m - margin
+ * p - padding
+ *
+ * Sides:
+ * t - margin-top or padding-top
+ * b - margin-bottom or padding-bottom
+ * l - margin-left or padding-left
+ * r - margin-right or padding-right
+ * x - both *-left and *-right
+ * y - both *-top and *-bottom
+ *
+ */
+
+/*
+* Paddings
+*/
+
+/* Padding all sides */
+
+// .p-xs-1, .p-s-1, ...
+@include repeatInAllBreakpoints(p, 1) {
+	padding: $space-1;
+}
+
+// .p-xs-2, .p-s-2, ...
+@include repeatInAllBreakpoints(p, 2) {
+	padding: $space-2;
+}
+
+// .p-xs-3, .p-s-3, ...
+@include repeatInAllBreakpoints(p, 3) {
+	padding: $space-3;
+}
+
+// .p-xs-4, .p-s-4, ...
+@include repeatInAllBreakpoints(p, 4) {
+	padding: $space-4;
+}
+
+// .p-xs-0, .p-s-0, ...
+@include repeatInAllBreakpoints(p, 0) {
+	padding: 0;
+}
+
+/* Padding-top & padding-bottom */
+
+// .py-xs-1, .py-s-1, ...
+@include repeatInAllBreakpoints(py, 1) {
+	padding-top: $space-1;
+	padding-bottom: $space-1;
+}
+
+// .py-xs-2, .py-s-2, ...
+@include repeatInAllBreakpoints(py, 2) {
+	padding-top: $space-2;
+	padding-bottom: $space-2;
+}
+
+// .py-xs-3, .py-s-3, ...
+@include repeatInAllBreakpoints(py, 3) {
+	padding-top: $space-3;
+	padding-bottom: $space-3;
+}
+
+// .py-xs-4, .py-s-4, ...
+@include repeatInAllBreakpoints(py, 4) {
+	padding-top: $space-4;
+	padding-bottom: $space-4;
+}
+
+// .py-xs-5, .py-s-5, ...
+@include repeatInAllBreakpoints(py, 5) {
+	padding-top: $space-5;
+	padding-bottom: $space-5;
+}
+
+// .py-xs-0, .py-s-0, ...
+@include repeatInAllBreakpoints(py, 0) {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* Padding-left & padding-right */
+
+// .px-xs-1, .px-s-1, ...
+@include repeatInAllBreakpoints(px, 1) {
+	padding-left: $space-1;
+	padding-right: $space-1;
+}
+
+// .px-xs-2, .px-s-2, ...
+@include repeatInAllBreakpoints(px, 2) {
+	padding-left: $space-2;
+	padding-right: $space-2;
+}
+
+// .px-xs-3, .px-s-3, ...
+@include repeatInAllBreakpoints(px, 3) {
+	padding-left: $space-3;
+	padding-right: $space-3;
+}
+
+// .px-xs-4, .px-s-4, ...
+@include repeatInAllBreakpoints(px, 4) {
+	padding-left: $space-4;
+	padding-right: $space-4;
+}
+
+// .px-xs-0, .px-s-0, ...
+@include repeatInAllBreakpoints(px, 0) {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Padding-top */
+
+// .pt-xs-1, .pt-s-1, ...
+@include repeatInAllBreakpoints(pt, 1) {
+	padding-top: $space-1;
+}
+
+// .pt-xs-2, .pt-s-2, ...
+@include repeatInAllBreakpoints(pt, 2) {
+	padding-top: $space-2;
+}
+
+// .pt-xs-3, .pt-s-3, ...
+@include repeatInAllBreakpoints(pt, 3) {
+	padding-top: $space-3;
+}
+
+// .pt-xs-4, .pt-s-4, ...
+@include repeatInAllBreakpoints(pt, 4) {
+	padding-top: $space-4;
+}
+
+// .pt-xs-5, .pt-s-5, ...
+@include repeatInAllBreakpoints(pt, 5) {
+	padding-top: $space-5;
+}
+
+// .pt-xs-0, .pt-s-0, ...
+@include repeatInAllBreakpoints(pt, 0) {
+	padding-top: 0;
+}
+
+/* Padding-right */
+
+// .pr-xs-1, .pr-s-1, ...
+@include repeatInAllBreakpoints(pr, 1) {
+	padding-right: $space-1;
+}
+
+// .pr-xs-2, .pr-s-2, ...
+@include repeatInAllBreakpoints(pr, 2) {
+	padding-right: $space-2;
+}
+
+// .pr-xs-3, .pr-s-3, ...
+@include repeatInAllBreakpoints(pr, 3) {
+	padding-right: $space-3;
+}
+
+// .pr-xs-4, .pr-s-4, ...
+@include repeatInAllBreakpoints(pr, 4) {
+	padding-right: $space-4;
+}
+
+// .pr-xs-0, .pr-s-0, ...
+@include repeatInAllBreakpoints(pr, 0) {
+	padding-right: 0;
+}
+
+/* Padding-bottom */
+
+// .pb-xs-1, .pb-s-1, ...
+@include repeatInAllBreakpoints(pb, 1) {
+	padding-bottom: $space-1;
+}
+
+// .pb-xs-2, .pb-s-2, ...
+@include repeatInAllBreakpoints(pb, 2) {
+	padding-bottom: $space-2;
+}
+
+// .pb-xs-3, .pb-s-3, ...
+@include repeatInAllBreakpoints(pb, 3) {
+	padding-bottom: $space-3;
+}
+
+// .pb-xs-4, .pb-s-4, ...
+@include repeatInAllBreakpoints(pb, 4) {
+	padding-bottom: $space-4;
+}
+
+// .pb-xs-0, .pb-s-0, ...
+@include repeatInAllBreakpoints(pb, 0) {
+	padding-bottom: 0;
+}
+
+/* Padding-left */
+
+// .pl-xs-1, .pl-s-1, ...
+@include repeatInAllBreakpoints(pl, 1) {
+	padding-left: $space-1;
+}
+
+// .pl-xs-2, .pl-s-2, ...
+@include repeatInAllBreakpoints(pl, 2) {
+	padding-left: $space-2;
+}
+
+// .pl-xs-3, .pl-s-3, ...
+@include repeatInAllBreakpoints(pl, 3) {
+	padding-left: $space-3;
+}
+
+// .pl-xs-4, .pl-s-4, ...
+@include repeatInAllBreakpoints(pl, 4) {
+	padding-left: $space-4;
+}
+
+// .pl-xs-0, .pl-s-0, ...
+@include repeatInAllBreakpoints(pl, 0) {
+	padding-left: 0;
+}
+
+
+/*
+* Margins
+*/
+
+/* Margin-top */
+
+// .mt-xs-1, .mt-s-1, ...
+@include repeatInAllBreakpoints(mt, 1) {
+	margin-top: $space-1;
+}
+
+// .mt-xs-2, .mt-s-2, ...
+@include repeatInAllBreakpoints(mt, 2) {
+	margin-top: $space-2;
+}
+
+// .mt-xs-3, .mt-s-3, ...
+@include repeatInAllBreakpoints(mt, 3) {
+	margin-top: $space-3;
+}
+
+// .mt-xs-4, .mt-s-4, ...
+@include repeatInAllBreakpoints(mt, 4) {
+	margin-top: $space-4;
+}
+
+// .mt-xs-5, .mt-s-5, ...
+@include repeatInAllBreakpoints(mt, 5) {
+	margin-top: $space-5;
+}
+
+// .mt-xs-0, .mt-s-0, ...
+@include repeatInAllBreakpoints(mt, 0) {
+	margin-top: 0;
+}
+
+/* Margin-bottom */
+
+// .mb-xs-1, .mb-s-1, ...
+@include repeatInAllBreakpoints(mb, 1) {
+	margin-bottom: $space-1;
+}
+
+// .mb-xs-2, .mb-s-2, ...
+@include repeatInAllBreakpoints(mb, 2) {
+	margin-bottom: $space-2;
+}
+
+// .mb-xs-3, .mb-s-3, ...
+@include repeatInAllBreakpoints(mb, 3) {
+	margin-bottom: $space-3;
+}
+
+// .mb-xs-4, .mb-s-4, ...
+@include repeatInAllBreakpoints(mb, 4) {
+	margin-bottom: $space-4;
+}
+
+// .mb-xs-0, .mb-s-0, ...
+@include repeatInAllBreakpoints(mb, 0) {
+	margin-bottom: 0;
+}
+
+/* Margin-right */
+
+// .mr-xs-1, .mr-s-1, ...
+@include repeatInAllBreakpoints(mr, 1) {
+	margin-right: $space-1;
+}
+
+// .mr-xs-2, .mr-s-2, ...
+@include repeatInAllBreakpoints(mr, 2) {
+	margin-right: $space-2;
+}
+
+// .mr-xs-3, .mr-s-3, ...
+@include repeatInAllBreakpoints(mr, 3) {
+	margin-right: $space-3;
+}
+
+// .mr-xs-4, .mr-s-4, ...
+@include repeatInAllBreakpoints(mr, 4) {
+	margin-right: $space-4;
+}
+
+// .mr-xs-0, .mr-s-0, ...
+@include repeatInAllBreakpoints(mr, 0) {
+	margin-right: 0;
+}
+
+/* Margin-left */
+
+// .ml-xs-1, .ml-s-1, ...
+@include repeatInAllBreakpoints(ml, 1) {
+	margin-left: $space-1;
+}
+
+// .ml-xs-2, .ml-s-2, ...
+@include repeatInAllBreakpoints(ml, 2) {
+	margin-left: $space-2;
+}
+
+// .ml-xs-3, .ml-s-3, ...
+@include repeatInAllBreakpoints(ml, 3) {
+	margin-left: $space-3;
+}
+
+// .ml-xs-4, .ml-s-4, ...
+@include repeatInAllBreakpoints(ml, 4) {
+	margin-left: $space-4;
+}
+
+// .ml-xs-0, .ml-s-0, ...
+@include repeatInAllBreakpoints(ml, 0) {
+	margin-left: 0;
+}
