@@ -27,5 +27,6 @@ For help me in development, i used the [Gulp](https://gulpjs.com/) for make comp
 - Changes on JS Carousel:
   - Enable tap function for mobile navigation
   - Create navigation dots dynamically
+- Change placeholder for a content more real.
   
 **Author:** [Welligton Porto](https://www.linkedin.com/in/welligtonporto/)
