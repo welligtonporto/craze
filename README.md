@@ -1,8 +1,6 @@
 # Craze
 A simple mobile app landing page.
 
-See in: https://welligtonporto.github.io/craze/
-
 ## Production & development
 
 ```sh
