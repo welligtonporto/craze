@@ -1,0 +1,90 @@
+/*
+ * Features
+ */
+
+.o-features {
+	&__item {
+		padding: $space-4 $space-4 $space-3 $space-4 !important;
+
+		@mixin border($side) {
+			content: "";
+			display: block;
+			position: absolute;
+			background-color: $color-border;
+
+			@if $side == "bottom" {
+				bottom: 0;
+				left: $gutter * 4;
+				width: calc(100% - #{$gutter * 8});
+				height: 1px;
+			}
+
+			@if $side == "right" {
+				right: 0;
+				top: $gutter * 2;
+				width: 1px;
+				height: calc(100% - #{$gutter * 4});
+			}
+		}
+
+		// Border bottom
+		&:after {
+			@include border(bottom);
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+
+				@include breakpoint(s){
+					display: block;
+				}
+			}
+		}
+
+		&:nth-last-child(1), &:nth-last-child(2) {
+			&:after {
+				@include breakpoint(s) {
+					display: none;
+				}
+			}
+		}
+
+		&:nth-last-child(3) {
+			&:after {
+				@include breakpoint(l) {
+					display: none;
+				}
+			}
+		}
+
+		// Border right
+		&:nth-child(odd) {
+			&:before {
+				@include breakpoint(s){
+					@include border(right);
+				}
+
+				@include breakpoint(l){
+					display: none;
+				}
+			}
+		}
+
+		&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+			&:before {
+				@include breakpoint(l){
+					@include border(right);
+				}
+			}
+		}
+
+		&-icon {
+			@include font-size(50);
+			width: 50px;
+			height: 50px;
+			margin: 0 0 $space-3 0;
+			color: $color-primary;
+		}
+	}
+}

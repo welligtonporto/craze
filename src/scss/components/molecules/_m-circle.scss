@@ -1,0 +1,30 @@
+/*
+ * Circle
+ */
+
+.m-circle {
+	display: inline-block;
+	padding: $space-2 + $space-1;
+	background-color: $color-text-primary;
+	@include opacity(.5);
+	@include border-radius($border-radius-circle);
+	@include transition(opacity $time-animation);
+
+	i {
+		color: $color-text-negative;
+	}
+
+	&:hover {
+		@include opacity(1);
+	}
+
+	&--light {
+		@extend .m-circle;
+		background-color: $color-text-secondary;
+		padding: $space-2;
+
+		&:hover {
+			background-color: $color-primary;
+		}
+	}
+}

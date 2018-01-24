@@ -1,0 +1,18 @@
+/*
+ * Aligns
+ */
+
+// .text-xs-left, .text-s-left, ...
+@include repeatInAllBreakpoints(text, left){
+	text-align: left !important;
+}
+
+// .text-xs-right, .text-s-right, ...
+@include repeatInAllBreakpoints(text, right){
+	text-align: right !important;
+}
+
+// .text-xs-center, .text-s-center, ...
+@include repeatInAllBreakpoints(text, center){
+	text-align: center !important;
+}

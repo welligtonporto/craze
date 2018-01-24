@@ -1,0 +1,44 @@
+/*
+ * Testimonial
+ */
+
+.o-testimonials {
+	width: 100%;
+	overflow: hidden;
+
+	&__items {
+		@extend %clearfix;
+		// width: 2560px; // temp
+		margin: 0 0 $space-4 0;
+		@include transition(transform $time-animation);
+	}
+
+	&__item {
+		// width: 1280px; // temp
+		float: left;
+
+		&-quote {
+		    @include font-size($font-size-default-3);
+		    font-style: italic;
+		}
+
+		&-author {
+		    @include font-size($font-size-default-2);
+			font-weight: $font-weight-bold;
+		}
+	}
+
+	&__nav {
+		display: inline-block;
+
+		li {
+			float: left;
+			margin: 0 $space-1 0 0;
+
+			&:last-child {
+				margin-right: 0;
+				
+			}
+		}
+	}
+}

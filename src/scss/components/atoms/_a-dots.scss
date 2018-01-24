@@ -1,0 +1,19 @@
+/*
+ * Dots
+ */
+
+.a-dots {
+	display: block;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	@include border-radius($border-radius-circle);
+	background-color: $color-bg-primary;
+	text-indent: -9999px;
+	border: 2px solid $color-primary;
+
+	&--active {
+		@extend .a-dots;
+		background-color: $color-primary;
+	}
+}

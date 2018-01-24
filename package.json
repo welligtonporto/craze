@@ -1,0 +1,28 @@
+{
+  "name": "Craze",
+  "version": "1.0.0",
+  "description": "A simple Mobile App landing page",
+  "author": "Welligton Luiz Porto",
+  "license": "ISC",
+  "main": "gulpfile.js",
+  "private": true,
+  "engines": {
+    "node": ">=4.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-compass": "^2.1.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/welligtonporto/craze.git"
+  }
+}
